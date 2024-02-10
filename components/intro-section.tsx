@@ -44,7 +44,7 @@ const IntroSection = () => {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ const IntroSection = () => {
         <span className="'font-bold"> 3 years</span> of experience. I enjoy
         building various kinds of sites. My focus is{" "}
         <span className="underline">React.js (Next.js)</span>
-      </motion.p>
+      </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center px-4 text-md font-medium gap-3"
         initial={{ opacity: 0, y: 100 }}
