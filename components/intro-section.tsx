@@ -9,8 +9,14 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 const IntroSection = () => {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
-      <div className="flex items-center justify-center">
+    <section
+      className="mb-28 max-w-[50rem] text-center
+     sm:mb-0 "
+    >
+      <div
+        className="flex items-center justify-center scroll-mt-[100rem]"
+        id="home"
+      >
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
