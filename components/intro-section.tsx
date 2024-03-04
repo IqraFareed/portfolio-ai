@@ -7,9 +7,14 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
+
 const IntroSection = () => {
+  const { ref } = useSectionInView("Home");
+
   return (
-    <section
+    <motion.section
+      ref={ref}
       className="mb-28 max-w-[50rem] text-center
      sm:mb-0 "
     >
@@ -97,7 +102,7 @@ const IntroSection = () => {
           <FaGithubSquare />
         </a>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 

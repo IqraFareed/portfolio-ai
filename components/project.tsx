@@ -13,6 +13,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]); //
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]); //
+
   return (
     <motion.section
       ref={ref}
