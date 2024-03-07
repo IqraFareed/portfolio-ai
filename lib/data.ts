@@ -11,10 +11,10 @@ export const links = [
     name: "Home",
     hash: "#home",
   },
-  {
-    name: "About",
-    hash: "#about",
-  },
+  // {
+  //   name: "About",
+  //   hash: "#about",
+  // },
   {
     name: "Projects",
     hash: "#projects",
@@ -64,8 +64,8 @@ export const projectsData = [
   {
     title: "J-ace",
     description:
-      "I worked as a react-js developer on this home remitance application where the remittance will be delivered to home of beneficiary. In this application there are multiple roles and each role has specific data acces and functionality.",
-    tags: ["React", "Next.js", "Material-UI", "RTK"],
+      "I worked as a react-js developer on this home remitance application where the remittance will be delivered to home of beneficiary.",
+    tags: ["React", "Next.js", "Material-UI", "RTK", "Axios"],
     imageUrl: code,
   },
   {
@@ -102,6 +102,8 @@ export const skillsData = [
   "Tailwind",
   "MongoDB",
   "Redux",
-  "GraphQL",
+  "GraphQL APIS",
+  "REST APIS",
   "Framer Motion",
+  " Agile Methodologies",
 ] as const;
