@@ -21,7 +21,7 @@ const Contact = () => {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:iqrafareed56@gmail.com">
           iqrafareed56@gmail.com
@@ -30,7 +30,7 @@ const Contact = () => {
       </p>
 
       <form
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const res = await sendEmail(formData);
           toast.success(res as string);
@@ -42,14 +42,19 @@ const Contact = () => {
           name="senderEmail"
           maxLength={500}
           placeholder="Your email"
-          className="h-14 px-4 rounded-lg borderBlack"
+          className="h-14 px-4 rounded-lg borderBlack
+           dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100
+            transition-all dark:outline-none"
         />
         <textarea
           placeholder="Your message"
           required
           name="message"
           maxLength={500}
-          className="h-52 px-4 my-3 rounded-lg borderBlack p-4"
+          className="h-52 px-4 my-3 rounded-lg borderBlack 
+          p-4 dark:bg-white dark:bg-opacity-80 
+          dark:focus:bg-opacity-100
+          transition-all dark:outline-none"
         />
         <ButtonContact />
       </form>

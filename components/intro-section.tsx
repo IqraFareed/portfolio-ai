@@ -89,7 +89,9 @@ const IntroSection = () => {
         <a
           href="/CV.pdf"
           download={true}
-          className="group cursor-pointer borderBlack bg-white  text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition"
+          className="group cursor-pointer borderBlack bg-white  text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full
+           outline-none focus:scale-110 hover:scale-110  active:scale-105 
+           transition dark:bg-white/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -97,14 +99,18 @@ const IntroSection = () => {
         <a
           href="https://www.linkedin.com/in/iqra-fareed-2701871a5/"
           target="_blank"
-          className="cursor-pointer bg-white  focus:scale-[1.15] hover:scale-[1.15]  active:scale-[105] transition borderBlack text-gray-700 p-4 flex items-center gap-2 rounded-full "
+          className="cursor-pointer bg-white  focus:scale-[1.15] hover:scale-[1.15]  active:scale-[105]
+           transition borderBlack text-gray-700 p-4 flex items-center
+            gap-2 rounded-full dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/IqraFareed"
           target="_blank"
-          className="cursor-pointer bg-white focus:scale-[1.15] hover:scale-[1.15]  active:scale-[105] transition borderBlack text-gray-700 p-4 flex items-center gap-2 text-[0.95rem] rounded-full"
+          className="cursor-pointer bg-white focus:scale-[1.15] hover:scale-[1.15] 
+           active:scale-[105] transition borderBlack text-gray-700 p-4 
+           flex items-center gap-2 text-[0.95rem] rounded-full dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>
