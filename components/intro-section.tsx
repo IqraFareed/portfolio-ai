@@ -25,7 +25,7 @@ const IntroSection = () => {
         id="home"
       >
         <div className="relative">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: "tween", duration: 0.2 }}
@@ -40,9 +40,9 @@ const IntroSection = () => {
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
-          </motion.div>
+          </motion.div> */}
 
-          <motion.span
+          {/* <motion.span
             className="text-4xl absolute bottom-0 right-0"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -54,18 +54,26 @@ const IntroSection = () => {
             }}
           >
             👋
-          </motion.span>
+          </motion.span> */}
+          <motion.h1
+            className="font-bold mt-4 px-4 text-8xl  !leading-[1.5] sm:text-3xl"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            Iqra Fareed
+          </motion.h1>
         </div>
       </div>
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
+        className=" mb-10 mt-2 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">{`Hello, I'm Iqra. `}</span>
+        <span className="">{`Hello `}</span>
         {`I'm a `} <span className="font-bold"> front-end developer</span> with
-        <span className="'font-bold"> 3 years</span> of experience. I enjoy
-        building various kinds of sites. My focus is{" "}
+        <span className="'font-bold"> 3 years</span> of experience.
+        {`I've done BS in software engineering from COMSATS university `}. I
+        enjoy building various kinds of sites. My focus is{" "}
         <span className="underline">React.js (Next.js)</span>
       </motion.h1>
       <motion.div
