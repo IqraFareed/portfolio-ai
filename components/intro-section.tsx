@@ -99,9 +99,7 @@ const IntroSection = () => {
         </Link> */}
 
         <Link
-          href={
-            "https://github.com/IqraFareed/CV/blob/main/Iqra%20fareed%20cv%20(2)%20(1).pdf"
-          }
+          href={"https://drive.google.com/drive/u/0/home"}
           target="_blank"
           download
           className="group cursor-pointer borderBlack bg-white  text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full
