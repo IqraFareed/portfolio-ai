@@ -74,8 +74,8 @@ const IntroSection = () => {
         {`I'm a `} <span className="font-bold"> front-end</span> developer based
         in Islamabad Pakistan, with
         <span className="'font-bold"> 3 years</span> of experience in React
-        js.My main focus these days is building accessible user interfaces
-        {`I've done BS in software engineering from COMSATS university `}. I
+        js.My main focus these days is building accessible user interfaces.
+        {` I've done BS in software engineering from COMSATS university`}. I
         enjoy building various kinds of sites. My focus is{" "}
         <span className="underline">React.js (Next.js)</span>
       </motion.h1>
