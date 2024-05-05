@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import profile from "@/public/profile.jpeg";
+import profile from "@/public/portfolio.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
