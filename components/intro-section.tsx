@@ -17,10 +17,10 @@ const IntroSection = () => {
   return (
     <motion.section
       ref={ref}
-      className="flex mb-28 mx-16 pt-20 text-center
+      className="sm:flex mb-28 mx-16 sm:pt-20 text-center
      sm:mb-0 "
     >
-      <div className="w-[40rem] text-left">
+      <div className="w-[18rem] sm:w-[40rem] sm:text-left">
         <motion.h1
           className="font-bold mt-4 px-4 text-2xl  !leading-[1.5] sm:text-5xl"
           initial={{ opacity: 0, y: 100 }}
@@ -88,7 +88,7 @@ const IntroSection = () => {
               height="292"
               quality="95"
               priority={true}
-              className=" h-48 w-48 rounded-full object-cover border-[0.15rem] shadow-xl"
+              className="mt-6 h-48 w-48 rounded-full object-cover border-[0.15rem] shadow-xl"
             />
           </motion.div>
         </div>

@@ -9,28 +9,22 @@ import coding from "@/public/coding.webp";
 export const links = [
   {
     name: "Home",
-    hash: "#home",
+    hash: "/",
   },
-  // {
-  //   name: "About",
-  //   hash: "#about",
-  // },
+
   {
-    name: "Projects",
-    hash: "#projects",
+    name: "Work",
+    hash: "/#work",
   },
   {
     name: "Skills",
-    hash: "#skills",
+    hash: "/#skills",
   },
+
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Contact",
+    hash: "/contact",
   },
-  // {
-  //   name: "Contact",
-  //   hash: "#contact",
-  // },
 ] as const;
 
 export const experiencesData = [

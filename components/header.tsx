@@ -22,7 +22,7 @@ const Header = () => {
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div> */}
       <nav className="  ">
-        <ul className="flex flex-wrap items-end justify-end gap-y-1 text-[1rem] font-medium  sm:flex-nowrap sm:gap-5">
+        <ul className="flex flex-wrap sm:items-end justify-center sm:justify-end gap-y-1 text-[1rem] font-medium  sm:flex-nowrap sm:gap-5">
           {links?.map((link) => (
             <motion.li
               className="h-3/4 flex items-center justify-center relative "
@@ -43,6 +43,7 @@ const Header = () => {
                 )}
                 href={link.hash}
                 onClick={() => {
+                  // router.push(link.hash);
                   setTimeOfLastClick(Date.now());
                   setActiveSection(link.name);
                 }}
@@ -59,43 +60,6 @@ const Header = () => {
               </Link>
             </motion.li>
           ))}
-          <motion.li
-            className="h-3/4 flex items-center justify-center relative "
-            key={"Contact"}
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-          >
-            <Link
-              className={clsx(
-                `${
-                  // activeSection === "Contact" ?
-                  //  "text-[#ff6464]" :
-                  "text-[#000]"
-                } flex w-full items-center justify-center  px-3 py-3   hover:text-[#ff6464] transition dark:text-gray-500 dark:hover:text-gray-300",
-                  {
-                    " dark:text-gray-200": activeSection === link.name,
-                  }`
-              )}
-              href={"/contact"}
-              // href={link.hash}
-              onClick={() => {
-                // router.push("/contact");
-
-                setTimeOfLastClick(Date.now());
-                // setActiveSection(link.name);
-              }}
-            >
-              {" "}
-              {"contact"}
-              {/* {activeSection === "Contact" && (
-                <motion.span
-                  className="text-[#ff6464]  absolute inset-0 -z-10 dark:bg-gray-800"
-                  layoutId="activeSection"
-                  transition={{ type: "spring", stiffness: 380, damping: 40 }}
-                ></motion.span>
-              )} */}
-            </Link>
-          </motion.li>
         </ul>
       </nav>
     </header>

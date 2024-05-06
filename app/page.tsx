@@ -3,7 +3,7 @@ import About from "@/components/about";
 import Contact from "@/app/contact/page";
 import Experience from "@/components/experience";
 import IntroSection from "@/components/intro-section";
-import Projects from "@/components/projects";
+import Work from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 
@@ -13,9 +13,9 @@ export default function Home() {
       <IntroSection />
       {/* <SectionDivider /> */}
       {/* <About /> */}
-      <Projects />
+      <Work />
       <Skills />
-      <Experience />
+      {/* <Experience /> */}
       {/* <Contact /> */}
     </main>
   );

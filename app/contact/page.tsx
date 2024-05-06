@@ -30,7 +30,7 @@ const Contact = () => {
       </p>
 
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="mt-10 flex flex-col dark:text-black w-[70vw] sm:w-[40vw]"
         action={async (formData) => {
           const res = await sendEmail(formData);
           toast.success(res as string);
