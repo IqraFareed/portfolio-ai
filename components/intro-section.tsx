@@ -60,7 +60,7 @@ const IntroSection = () => {
             }
             target="_blank"
             download
-            className="group cursor-pointer borderBlack bg-[#ff6464]  text-[#fff] px-7 py-3 flex items-center gap-2 
+            className="group cursor-pointer borderBlack bg-[#ff6464] rounded-[4px] text-[#fff] px-7 py-3 flex items-center gap-2 
            outline-none focus:scale-110 hover:scale-110  active:scale-105 
            transition dark:bg-white/10"
           >

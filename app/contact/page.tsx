@@ -1,20 +1,20 @@
 "use client";
 import React from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../../components/section-heading";
 
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
 import { toast } from "react-hot-toast";
-import ButtonContact from "./Button";
+import ButtonContact from "../../components/Button";
 const Contact = () => {
-  const { ref } = useSectionInView("Contact");
+  // const { ref } = useSectionInView("Contact");
 
   return (
     <motion.section
       id="contact"
-      ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-[10rem]"
+      // ref={ref}
+      className="flex flex-col  items-center justify-center mb-20 sm:mb-28  text-center scroll-mt-[10rem]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2 }}

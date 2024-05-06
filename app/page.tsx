@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import About from "@/components/about";
-import Contact from "@/components/contact";
+import Contact from "@/app/contact/page";
 import Experience from "@/components/experience";
 import IntroSection from "@/components/intro-section";
 import Projects from "@/components/projects";
@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
       <IntroSection />
-      <SectionDivider />
+      {/* <SectionDivider /> */}
       {/* <About /> */}
       <Projects />
       <Skills />
       <Experience />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }
